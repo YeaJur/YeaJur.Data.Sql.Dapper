@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /YeaJur.Data.Sql.Dapper/YeaJur.Data.Sql.Dapper.nuspec
+/YeaJur.Data.Sql.Dapper/NuGet.exe
