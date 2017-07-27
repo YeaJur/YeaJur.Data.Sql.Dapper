@@ -89,6 +89,7 @@ namespace YeaJur.Data.Sql.Dapper
                 catch (Exception ex)
                 {
                     LogHandler.Log(ELogType.Fatal, GetType().FullName + "获取写数据库连接错误！", ex);
+                    throw ex;
                 }
                 return tmp;
             }

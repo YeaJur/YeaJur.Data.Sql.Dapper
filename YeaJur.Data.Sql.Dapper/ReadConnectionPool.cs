@@ -59,6 +59,7 @@ namespace YeaJur.Data.Sql.Dapper
                 catch (Exception ex)
                 {
                     LogHandler.Log(ELogType.Fatal, GetType().FullName + "获取读数据库连接错误！", ex);
+                    throw ex;
                 }
             });
         }
@@ -109,6 +110,7 @@ namespace YeaJur.Data.Sql.Dapper
                 catch (Exception ex)
                 {
                     LogHandler.Log(ELogType.Fatal, GetType().FullName + "获取读数据库连接错误！", ex);
+                    throw ex;
                 }
                 return tmp;
             }
